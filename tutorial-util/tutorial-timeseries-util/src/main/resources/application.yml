@@ -1,11 +1,11 @@
 com.ge.dt.tsc:
-  token-endpoint: https://<YOUR_UAA_INSTANCE_HERE>.predix-uaa.run.aws-usw02-pr.ice.predix.io/oauth/token
-  clientId: <YOUR CLIENT ID>
-  zoneId: <YOUR_PREDIX_TIMESERIES_SERVICE_ZONE_ID>
-  ingestionEndpoint: wss://gateway-predix-data-services.run.aws-usw02-pr.ice.predix.io/v1/stream/messages
-  queryEndpoint: https://time-series-store-predix.run.aws-usw02-pr.ice.predix.io/v1/datapoints
-  proxyHost: <HOSTNAME>
-  proxyPort: <PORT>
+  token-endpoint: https://01fcb2f3-1b03-444e-8195-b69c029e63a5.predix-uaa.run.aws-jp01-pr.ice.predix.io/oauth/token
+  clientId: tutorial-svcs
+  zoneId: 36ff103e-be94-4383-b0f8-01052c4b7668
+  ingestionEndpoint: wss://gateway-predix-data-services.run.aws-jp01-pr.ice.predix.io/v1/stream/messages
+  queryEndpoint: https://time-series-store-predix.run.aws-jp01-pr.ice.predix.io/v1/datapoints
+  #proxyHost: <HOSTNAME>
+  #proxyPort: <PORT>
 
 logging.level.com.ge.dt.tsc: DEBUG
 logging.level.com.ge.digitaltwin.tutorial.util: debug

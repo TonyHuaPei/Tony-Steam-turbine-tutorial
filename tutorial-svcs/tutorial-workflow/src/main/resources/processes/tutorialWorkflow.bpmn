@@ -4,10 +4,10 @@
     <serviceTask id="RunAnalytic" name="Run Analytic" activiti:class="com.ge.digitaltwin.tutorial.workflow.activiti.PostRESTServiceJavaDelegate">
       <extensionElements>
         <activiti:field name="url">
-          <activiti:string><![CDATA[https://<YOUR_CATALOG_ENTRY_ID>.run.aws-usw02-pr.ice.predix.io/api/v1/analytic/execution/]]></activiti:string>
+          <activiti:string><![CDATA[https://9e284730-0e15-48f8-a8bc-4c2b95a0927c.run.aws-jp01-pr.ice.predix.io/api/v1/analytic/execution/]]></activiti:string>
         </activiti:field>
         <activiti:field name="predixZoneId">
-          <activiti:string><![CDATA[<YOUR_PREDIX_ANALYTIC_CATALOG_ZONE_ID>]]></activiti:string>
+          <activiti:string><![CDATA[bc4b1ba5-8d7e-48cb-9dbc-a216006923ca]]></activiti:string>
         </activiti:field>
       </extensionElements>
     </serviceTask>
@@ -16,7 +16,7 @@
     <serviceTask id="GetData" name="Get Data" activiti:class="com.ge.digitaltwin.tutorial.workflow.activiti.GetRESTServiceJavaDelegate">
       <extensionElements>
         <activiti:field name="url">
-          <activiti:string><![CDATA[https://<YOUR_OWN_DATA_SERVICE_PREFIX>-dt-tutorial-data.run.aws-usw02-pr.ice.predix.io/input?assetId={assetId}&startTimestamp={startTime}&endTimestamp={endTime}]]></activiti:string>
+          <activiti:string><![CDATA[https://Pei-dt-tutorial-data.run.aws-jp01-pr.ice.predix.io/input?assetId={assetId}&startTimestamp={startTime}&endTimestamp={endTime}]]></activiti:string>
         </activiti:field>
       </extensionElements>
     </serviceTask>
@@ -25,7 +25,7 @@
     <serviceTask id="AnalyticPostProcessing" name="Analytic Post Processing" activiti:class="com.ge.digitaltwin.tutorial.workflow.activiti.PostRESTServiceJavaDelegate">
       <extensionElements>
         <activiti:field name="url">
-          <activiti:string><![CDATA[https://<YOUR_OWN_POSTPROCESSING_SERVICE_PREFIX>-dt-tutorial-analytic-post-processing.run.aws-usw02-pr.ice.predix.io/transform/{assetId}]]></activiti:string>
+          <activiti:string><![CDATA[https://Pei-dt-tutorial-analytic-post-processing.run.aws-jp01-pr.ice.predix.io/transform/{assetId}]]></activiti:string>
         </activiti:field>
       </extensionElements>
     </serviceTask>
@@ -33,7 +33,7 @@
     <serviceTask id="PersistResults" name="Persist Results" activiti:class="com.ge.digitaltwin.tutorial.workflow.activiti.PostRESTServiceJavaDelegate">
       <extensionElements>
         <activiti:field name="url">
-          <activiti:string><![CDATA[https://<YOUR_OWN_RESULT_SERVICE_PREFIX>-dt-tutorial-result-persistence.run.aws-usw02-pr.ice.predix.io/api/analyticResults]]></activiti:string>
+          <activiti:string><![CDATA[https://Pei-dt-tutorial-result-persistence.run.aws-jp01-pr.ice.predix.io/api/analyticResults]]></activiti:string>
         </activiti:field>
       </extensionElements>
     </serviceTask>
